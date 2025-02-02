@@ -1,5 +1,5 @@
 /* Common Container */
-.payment-container {
+.container {
   display: flex;
   align-items: start;
   justify-content: start;
@@ -7,32 +7,32 @@
   margin-bottom: 80px;
 }
 
-.payment-container article {
+.container article {
   width: 90.886%;
   margin-left: 48px;
 }
 
 /* Common Page Top Area */
-.payment-container .top-step-wrap {
+.top-step-wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
 }
 
-.payment-container .page-title {
+.top-step-wrap .page-title {
   color: #252525;
   font-size: 20px;
   line-height: 28px;
 }
 
-.payment-container .step-list {
+.top-step-wrap .step-list {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.payment-container .step-list li {
+.top-step-wrap .step-list li {
   color: #868686;
   font-size: 14px;
   line-height: 20px;
@@ -42,11 +42,11 @@
   justify-content: center;
 }
 
-.payment-container .step-list li:last-child {
+.top-step-wrap .step-list li:last-child {
   margin-right: 0;
 }
 
-.payment-container .step-list li::after {
+.top-step-wrap .step-list li::after {
   content: "";
   display: inline-block;
   vertical-align: middle;
@@ -57,11 +57,11 @@
   background-size: cover;
 }
 
-.payment-container .step-list li:last-child::after {
+.top-step-wrap .step-list li:last-child::after {
   display: none;
 }
 
-.payment-container .step-list i {
+.top-step-wrap .step-list i {
   width: 16px;
   height: 16px;
   border-radius: 100%;
@@ -74,18 +74,18 @@
   margin-right: 6px;
 }
 
-.payment-container .step-list li.on {
+.top-step-wrap .step-list li.on {
   color: #252525;
   font-weight: 700;
 }
 
-.payment-container .step-list li.on i {
+.top-step-wrap .step-list li.on i {
   background: #4e4e4e;
   color: #fff;
 }
 
 /* Common Checkbox */
-.payment-container .checkbox input {
+.container .checkbox input {
   appearance: none;
   border-radius: 2px;
   border: 1px solid #eaeaea;
@@ -96,14 +96,14 @@
   margin: 0;
 }
 
-.payment-container .checkbox input:checked {
+.container .checkbox input:checked {
   background-color: #f76e33;
   background-image: url(../img/icon_check_wt_1.6px.png);
   background-repeat: no-repeat;
 }
 
 /* Common Button */
-.payment-container .bk-bg-btn {
+.container .bk-bg-btn {
   border-radius: 4px;
   background: #252525;
   color: #fff;
@@ -112,7 +112,7 @@
   line-height: 20px;
 }
 
-.payment-container .gray-border-btn {
+.container .gray-border-btn {
   border-radius: 4px;
   border: 1px solid #c1c1c1;
   background: #fff;
@@ -123,14 +123,14 @@
 }
 
 /* Common Notice */
-.payment-container .notice-wrap {
+.notice-wrap {
   margin-top: 40px;
   border-radius: 4px;
   background: #f9f9f9;
   padding: 20px 32px;
 }
 
-.payment-container .notice-wrap li {
+.notice-wrap li {
   color: #4e4e4e;
   font-size: 13px;
   line-height: 19px;
@@ -139,11 +139,11 @@
   align-items: center;
 }
 
-.payment-container .notice-wrap li:last-child {
+.notice-wrap li:last-child {
   margin-bottom: 0;
 }
 
-.payment-container .notice-wrap li::before {
+.notice-wrap li::before {
   content: "";
   width: 3.5px;
   height: 3.5px;
@@ -152,26 +152,27 @@
   margin-right: 4px;
 }
 
-.payment-container .common-list-wrap {
+/* Common List */
+.common-list-wrap {
   border-radius: 8px;
   border: 1px solid #d7d7d7;
   margin-bottom: 20px;
 }
 
-.payment-container .common-list-wrap .list-header {
+.common-list-wrap .list-header {
   border-bottom: 1px solid #eaeaea;
   padding: 12px 20px;
   display: flex;
   align-items: center;
 }
 
-.payment-container .common-list-wrap .list-header b {
+.common-list-wrap .list-header b {
   font-size: 16px;
   line-height: 24px;
   margin-left: 12px;
 }
 
-.payment-container .common-list-wrap .list-body .checkbox {
+.common-list-wrap .list-body .checkbox {
   margin-right: 12px;
   padding-left: 20px;
   display: flex;
@@ -179,18 +180,18 @@
   justify-content: center;
 }
 
-.payment-container .common-list-wrap .list-body li {
+.common-list-wrap .list-body li {
   display: grid;
   grid-template-columns: calc(100% - 20.945%) 20.945%;
   border-bottom: 1px solid #eaeaea;
 }
 
-.payment-container .common-list-wrap .text-wrap {
+.common-list-wrap .text-wrap {
   display: grid;
   grid-template-columns: 52px 13.223% 42.952% 37.005%;
 }
 
-.payment-container .common-list-wrap .thumb {
+.common-list-wrap .thumb {
   width: 100%;
   height: 0;
   padding-top: 100%;
@@ -203,7 +204,7 @@
   position: relative;
 }
 
-.payment-container .common-list-wrap .thumb img {
+.common-list-wrap .thumb img {
   width: 100%;
   position: absolute;
   left: 50%;
@@ -211,7 +212,7 @@
   transform: translate(-50%, -50%);
 }
 
-.payment-container .common-list-wrap .work-info {
+.common-list-wrap .work-info {
   padding: 20px 7.39% 20px 6.159%;
   display: flex;
   flex-direction: column;
@@ -220,24 +221,24 @@
   height: 100%;
 }
 
-.payment-container .common-list-wrap .work-info i {
+.common-list-wrap .work-info i {
   color: #868686;
   font-size: 13px;
   line-height: 18px;
 }
 
-.payment-container .common-list-wrap .work-info b {
+.common-list-wrap .work-info b {
   font-size: 18px;
   line-height: 24px;
   margin: 6px 0 4px;
 }
 
-.payment-container .common-list-wrap .work-info span {
+.common-list-wrap .work-info span {
   font-size: 14px;
   line-height: 18px;
 }
 
-.payment-container .common-list-wrap .status {
+.common-list-wrap .status {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -245,7 +246,7 @@
   margin-top: 10px;
 }
 
-.payment-container .common-list-wrap .status i {
+.common-list-wrap .status i {
   height: 22px;
   padding: 0px 6px;
   border-radius: 4px;
@@ -260,12 +261,12 @@
   margin-right: 4px;
 }
 
-.payment-container .common-list-wrap .status i.orange-border {
+.common-list-wrap .status i.orange-border {
   border: 1px solid #fbb89b;
   color: #f76e33;
 }
 
-.payment-container .common-list-wrap .payment-info {
+.common-list-wrap .payment-info {
   padding: 20px 8.579%;
   height: 100%;
   display: flex;
@@ -275,7 +276,7 @@
   border-left: 1px solid #eaeaea;
 }
 
-.payment-container .common-list-wrap .payment-info dl {
+.common-list-wrap .payment-info dl {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -283,35 +284,35 @@
   width: 100%;
 }
 
-.payment-container .common-list-wrap .payment-info dt {
+.common-list-wrap .payment-info dt {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
 }
 
-.payment-container .common-list-wrap .payment-info i {
+.common-list-wrap .payment-info i {
   font-size: 12px;
   line-height: 16px;
 }
 
-.payment-container .common-list-wrap .payment-info dd {
+.common-list-wrap .payment-info dd {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
 }
 
-.payment-container .common-list-wrap .payment-info .total {
+.common-list-wrap .payment-info .total {
   border-top: 1px solid #eaeaea;
   padding-top: 9px;
   margin-top: 4px;
 }
 
-.payment-container .common-list-wrap .payment-info .total dt,
-.payment-container .common-list-wrap .payment-info .total dd {
+.common-list-wrap .payment-info .total dt,
+.common-list-wrap .payment-info .total dd {
   font-weight: bold;
 }
 
-.payment-container .common-list-wrap .payment-noti {
+.common-list-wrap .payment-noti {
   border-radius: 4px;
   background: #f3f3f3;
   font-size: 13px;
@@ -321,11 +322,11 @@
   margin-top: 10px;
 }
 
-.payment-container .common-list-wrap .payment-noti:first-child {
+.common-list-wrap .payment-noti:first-child {
   margin-top: 0;
 }
 
-.payment-container .common-list-wrap .buttons {
+.common-list-wrap .buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -334,13 +335,13 @@
   border-left: 1px solid #eaeaea;
 }
 
-.payment-container .common-list-wrap .buttons button {
+.common-list-wrap .buttons button {
   width: 100%;
   margin-bottom: 6px;
   height: 32px;
 }
 
-.payment-container .common-list-wrap .buttons button:last-child {
+.common-list-wrap .buttons button:last-child {
   margin-bottom: 0;
 }
 
@@ -533,47 +534,359 @@
   padding: 0px 6px;
 }
 
+/* 02. 결제및 출고 요청-출고정보입력 */
+.reservation-detail article {
+  width: 100%;
+  margin-left: 0;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.reservation-detail .layer-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+
+.reservation-detail .left-area {
+  width: 64%;
+}
+
+.reservation-detail .left-area .info-wrap {
+  border-bottom: 8px solid #f9f9f9;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+
+.reservation-detail .input-text {
+  border-radius: 4px;
+  border: 1px solid #e2e2e2;
+  height: 46px;
+  padding: 0px 16px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+}
+
+.reservation-detail .input-text i {
+  width: 20px;
+  margin-right: 8px;
+}
+
+.reservation-detail .input-text i img {
+  width: 100%;
+}
+
+.reservation-detail .input-text input {
+  border: none;
+  height: 100%;
+  width: calc(100% - 28px);
+  width: -webkit-calc(100% - 28px);
+  width: -moz-calc(100% - 28px);
+  width: -o-calc(100% - 28px);
+}
+
+.reservation-detail .date-info dl {
+  margin-bottom: 24px;
+}
+
+.reservation-detail .date-info dt {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.reservation-detail .date-info .select-time {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.reservation-detail .date-info .select-time a {
+  font-size: 15px;
+  line-height: 21px;
+  border-radius: 4px;
+  border: 1px solid #e2e2e2;
+  padding: 0px 16px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reservation-detail .date-info .select-time a.on {
+  background: #f76e33;
+  border-color: transparent;
+  color: #fff;
+  font-weight: 500;
+}
+
+.reservation-detail .reservation-notice {
+  margin-top: 10px;
+}
+
+.reservation-detail .reservation-notice li {
+  color: #868686;
+  font-size: 13px;
+  line-height: 19px;
+  margin-bottom: 2px;
+}
+
+.reservation-detail .reservation-notice li:last-child {
+  margin-bottom: 0;
+}
+
+.reservation-detail .reservation-notice li::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+  width: 3.5px;
+  height: 3.5px;
+  border-radius: 100%;
+  background: #c1c1c1;
+}
+
+.reservation-detail .left-area textarea {
+  resize: none;
+  border-radius: 4px;
+  border: 1px solid #e2e2e2;
+  min-height: 108px;
+  padding: 12px 16px;
+  font-size: 15px;
+  width: 100%;
+}
+
+.reservation-detail .left-area textarea::placeholder {
+  color: #868686;
+  font-size: 15px;
+  line-height: 21px;
+}
+
+.reservation-detail .left-area .length-info {
+  margin-top: 8px;
+  color: #868686;
+  text-align: right;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.reservation-detail .left-area .notice-wrap {
+  margin-top: 24px;
+}
+
+.reservation-detail .drop-list-wrap {
+  border-radius: 4px;
+  border: 1px solid #e2e2e2;
+}
+
+.reservation-detail .drop-list-wrap a {
+  padding: 10px 16px;
+  display: block;
+  position: relative;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.reservation-detail .drop-list-wrap .drop-head {
+  position: relative;
+  cursor: pointer;
+}
+
+.reservation-detail .drop-list-wrap .drop-head .icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.reservation-detail .drop-list-wrap .drop-head .icon img {
+  width: 20px;
+}
+
+.reservation-detail .drop-list-wrap .length {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.reservation-detail .drop-list-wrap dl {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.reservation-detail .drop-list-wrap dt {
+  width: 64px;
+  height: 64px;
+  border-radius: 4px;
+  background: #f3f3f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reservation-detail .drop-list-wrap dt img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.reservation-detail .drop-list-wrap dd {
+  width: calc(100% - 64px);
+  width: -webkit-calc(100% - 64px);
+  width: -moz-calc(100% - 64px);
+  width: -o-calc(100% - 64px);
+  padding-left: 16px;
+}
+
+.reservation-detail .drop-list-wrap span {
+  font-size: 14px;
+  line-height: 20px;
+  display: block;
+}
+
+.reservation-detail .drop-list-wrap b {
+  font-size: 14px;
+  line-height: 20px;
+  display: block;
+  margin-top: 2px;
+}
+
+.reservation-detail .drop-list-wrap .on-list {
+  border-bottom: 1px solid #f3f3f3;
+  display: none;
+}
+
+.reservation-detail .drop-body {
+  display: none;
+}
+
+.reservation-detail .drop-body dl {
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.reservation-detail .drop-body dl:last-child {
+  border-bottom: none;
+}
+
+.reservation-detail .right-area {
+  width: 32%;
+  padding: 24px;
+  border-radius: 4px;
+  border: 1px solid #4e4e4e;
+  position: sticky;
+  top: 20px;
+}
+
+.reservation-detail .drop-list-wrap.on .icon {
+  transform: translateY(-50%);
+}
+
+.reservation-detail .drop-list-wrap.on a {
+  display: none;
+}
+
+.reservation-detail .drop-list-wrap.on .on-list {
+  display: flex;
+}
+
+.reservation-detail .drop-list-wrap.on .drop-body {
+  display: block;
+}
+
+.reservation-detail .right-area dl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.reservation-detail .right-area dt,
+.reservation-detail .right-area dd {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.reservation-detail .total-price {
+  margin-bottom: 16px;
+}
+
+.reservation-detail .total-price dt {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.reservation-detail .total-price dd {
+  color: #f76e33;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.reservation-detail .right-area button {
+  height: 56px;
+  border-radius: 4px;
+  background: #f76e33;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  width: 100%;
+  margin-top: 16px;
+}
+
 @media all and (max-width: 1280px) {
   .snb-wrap {
     display: none;
   }
 
-  .payment-container {
+  .container {
     padding: 0 20px;
   }
 
-  .payment-container article {
+  .container article {
     margin-left: 0;
     width: 100%;
+  }
+
+  /* 02. 결제및 출고 요청-출고정보입력 */
+  .reservation-detail .left-area .date-info .select-time {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media all and (max-width: 900px) {
-  .payment-container {
+  .container {
     padding: 0;
     margin-top: 0;
     background: #f3f3f3;
   }
 
   /* Common Page Top Area */
-  .payment-container .top-step-wrap {
+  .top-step-wrap {
     padding: 8px 20px 16px 20px;
     background: #fff;
   }
 
-  .payment-container .step-list li {
+  .top-step-wrap .step-list li {
     margin-right: 0;
   }
 
-  .payment-container .step-list li::after {
+  .top-step-wrap .step-list li::after {
     display: none;
   }
 
-  .payment-container .step-list span {
+  .top-step-wrap .step-list span {
     display: none;
   }
 
-  .payment-container .common-list-wrap {
+  .common-list-wrap {
     border-radius: 0;
     border: none;
     width: calc(100% - 40px);
@@ -587,20 +900,20 @@
     box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.04);
   }
 
-  .payment-container .common-list-wrap .list-header {
+  .common-list-wrap .list-header {
     padding: 12px 16px;
   }
 
-  .payment-container .common-list-wrap .list-header b {
+  .common-list-wrap .list-header b {
     font-size: 14px;
     line-height: 20px;
   }
 
-  .payment-container .common-list-wrap .list-body li {
+  .common-list-wrap .list-body li {
     display: block;
   }
 
-  .payment-container .common-list-wrap .text-wrap {
+  .common-list-wrap .text-wrap {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -608,7 +921,7 @@
     position: relative;
   }
 
-  .payment-container .common-list-wrap .list-body .checkbox {
+  .common-list-wrap .list-body .checkbox {
     width: 100%;
     justify-content: start;
     padding-left: 0;
@@ -616,19 +929,19 @@
     margin-bottom: 16px;
   }
 
-  .payment-container .common-list-wrap .work-info .lot-num {
+  .common-list-wrap .work-info .lot-num {
     position: absolute;
     top: 13px;
     left: 48px;
   }
 
-  .payment-container .common-list-wrap .thumb {
+  .common-list-wrap .thumb {
     width: 80px;
     padding-top: 80px;
     margin: 0;
   }
 
-  .payment-container .common-list-wrap .work-info {
+  .common-list-wrap .work-info {
     padding: 0 16px 0;
     width: calc(100% - 80px);
     width: -webkit-calc(100% - 80px);
@@ -636,55 +949,55 @@
     width: -o-calc(100% - 80px);
   }
 
-  .payment-container .common-list-wrap .work-info b {
+  .common-list-wrap .work-info b {
     font-size: 16px;
     line-height: 24px;
   }
 
-  .payment-container .common-list-wrap .work-info span {
+  .common-list-wrap .work-info span {
     font-size: 13px;
     line-height: 18px;
   }
 
-  .payment-container .common-list-wrap .payment-info {
+  .common-list-wrap .payment-info {
     padding: 0;
     width: 100%;
     border-left: none;
     margin-top: 16px;
   }
 
-  .payment-container .common-list-wrap .payment-info dt,
-  .payment-container .common-list-wrap .payment-info dd {
+  .common-list-wrap .payment-info dt,
+  .common-list-wrap .payment-info dd {
     font-size: 13px;
     line-height: 19px;
   }
 
-  .payment-container .common-list-wrap .payment-info .total {
+  .common-list-wrap .payment-info .total {
     margin-top: 8px;
   }
 
-  .payment-container .common-list-wrap .payment-info .total dt,
-  .payment-container .common-list-wrap .payment-info .total dd {
+  .common-list-wrap .payment-info .total dt,
+  .common-list-wrap .payment-info .total dd {
     font-size: 16px;
     line-height: 24px;
   }
 
-  .payment-container .common-list-wrap .payment-noti {
+  .common-list-wrap .payment-noti {
     width: 100%;
     text-align: center;
   }
 
-  .payment-container .common-list-wrap .payment-noti:first-child {
+  .common-list-wrap .payment-noti:first-child {
     margin-top: 16px;
   }
 
-  .payment-container .common-list-wrap .buttons {
+  .common-list-wrap .buttons {
     padding: 16px;
     border-left: none;
     flex-direction: row-reverse;
   }
 
-  .payment-container .common-list-wrap .buttons button {
+  .common-list-wrap .buttons button {
     margin-bottom: 0;
     border-radius: 4px;
     height: 36px;
@@ -692,7 +1005,7 @@
     margin-right: 8px;
   }
 
-  .payment-container .common-list-wrap .buttons button:first-child {
+  .common-list-wrap .buttons button:first-child {
     margin-right: 0;
   }
 
