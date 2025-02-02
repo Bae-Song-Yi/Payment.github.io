@@ -541,6 +541,7 @@
   display: flex;
   align-items: start;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .reservation-detail .layer-title {
@@ -558,6 +559,11 @@
   border-bottom: 8px solid #f9f9f9;
   padding-bottom: 24px;
   margin-bottom: 24px;
+}
+
+.reservation-detail .left-area .info-wrap:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .reservation-detail .input-text {
@@ -676,8 +682,8 @@
   line-height: 18px;
 }
 
-.reservation-detail .left-area .notice-wrap {
-  margin-top: 24px;
+.reservation-detail .notice-wrap {
+  margin-top: 0;
 }
 
 .reservation-detail .drop-list-wrap {
@@ -1068,5 +1074,72 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     -webkit-line-clamp: 3;
+  }
+
+  /* 02. 결제및 출고 요청-출고정보입력 */
+  .reservation-detail {
+    background: transparent;
+  }
+
+  .reservation-detail article {
+    display: block;
+  }
+
+  .reservation-detail .left-area,
+  .reservation-detail .right-area {
+    width: 100%;
+  }
+
+  .reservation-detail .left-area,
+  .reservation-detail .notice-wrap {
+    padding: 0 20px;
+  }
+
+  .reservation-detail .left-area .info-wrap:last-child {
+    border-bottom: 8px solid #f9f9f9;
+    padding-bottom: 24px;
+  }
+
+  .reservation-detail .left-area textarea {
+    min-height: 129px;
+  }
+
+  .reservation-detail .drop-list-wrap .drop-head .icon img {
+    width: 16px;
+  }
+
+  .reservation-detail .right-area {
+    border: none;
+    border-radius: 0;
+    padding: 0 20px 20px;
+    position: static;
+  }
+
+  .reservation-detail .right-area button.fix {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 76px;
+    border-top: 1px solid #eaeaea;
+    background: #fff;
+  }
+
+  .reservation-detail .right-area button.fix::after {
+    content: "결제하기";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f76e33;
+    border-radius: 4px;
+    height: 56px;
+    width: calc(100% - 40px);
+    width: -webkit-calc(100% - 40px);
+    width: -moz-calc(100% - 40px);
+    width: -o-calc(100% - 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

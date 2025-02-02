@@ -130,10 +130,6 @@
                   </div>
                 </div>
               </div>
-
-              <ul class="notice-wrap">
-                <li>픽업 전 차량의 공간과 작품의 크기를 꼭 확인해 주시기 바랍니다. (일반 승용차 기준, 액자 포함 작품 전체 크기 90 x 120 cm까지 적재 가능)</li>
-              </ul>
             </div>
 
             <!-- Stiky Bar -->
@@ -158,9 +154,13 @@
                 <dt>배송비</dt>
                 <dd>1,000,000원</dd>
               </dl>
-              <button>결제하기</button>
+              <button class="fix">결제하기</button>
             </div>
             <!-- //Stiky Bar -->
+
+            <ul class="notice-wrap">
+              <li>픽업 전 차량의 공간과 작품의 크기를 꼭 확인해 주시기 바랍니다. (일반 승용차 기준, 액자 포함 작품 전체 크기 90 x 120 cm까지 적재 가능)</li>
+            </ul>
           </article>
         </section>
       </div>
@@ -189,8 +189,35 @@
     });
 
     //선택작품 총 갯수
-
     const bodyItemLength = document.querySelectorAll(".drop-body dl").length;
     document.querySelectorAll(".drop-head .length i").forEach((length) => (length.textContent = bodyItemLength));
+
+    //모바일 버튼 특정 위치 fix 해제
+    function fixButtonRemove() {
+      if (window.innerWidth > 901) return;
+
+      const rightArea = document.querySelector(".right-area");
+      const button = rightArea.querySelector("button");
+      let scrollHandler;
+
+      window.addEventListener("scroll", () => {
+        if (!scrollHandler) {
+          scrollHandler = setTimeout(() => {
+            const rightAreaBottom = rightArea.getBoundingClientRect().bottom + window.scrollY;
+            const viewportBottom = window.scrollY + window.innerHeight;
+
+            if (viewportBottom > rightAreaBottom) {
+              button.classList.remove("fix");
+            } else {
+              button.classList.add("fix");
+            }
+
+            scrollHandler = null;
+          }, 100);
+        }
+      });
+    }
+
+    fixButtonRemove();
   </script>
 </html>
