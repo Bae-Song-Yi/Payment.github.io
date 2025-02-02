@@ -21,7 +21,7 @@
 }
 
 .top-step-wrap .page-title {
-  color: #252525;
+  color: var(--color-gr-1000);
   font-size: 20px;
   line-height: 28px;
 }
@@ -33,7 +33,7 @@
 }
 
 .top-step-wrap .step-list li {
-  color: #868686;
+  color: var(--color-gr-600);`
   font-size: 14px;
   line-height: 20px;
   margin-right: 6px;
@@ -65,9 +65,9 @@
   width: 16px;
   height: 16px;
   border-radius: 100%;
-  background: #f3f3f3;
+  background: var(--color-gr-150);
   text-align: center;
-  color: #868686;
+  color: var(--color-gr-600);
   font-size: 10px;
   font-weight: 700;
   line-height: 16px;
@@ -75,20 +75,20 @@
 }
 
 .top-step-wrap .step-list li.on {
-  color: #252525;
+  color: var(--color-gr-1000);
   font-weight: 700;
 }
 
 .top-step-wrap .step-list li.on i {
-  background: #4e4e4e;
-  color: #fff;
+  background: var(--color-gr-800);
+  color: var(--color-white);
 }
 
 /* Common Checkbox */
 .container .checkbox input {
   appearance: none;
   border-radius: 2px;
-  border: 1px solid #eaeaea;
+  border: 1px solid var(--color-gr-200);
   width: 20px;
   height: 20px;
   background: url(../img/icon_check_gray400_1.6px.png) no-repeat center;
@@ -97,7 +97,7 @@
 }
 
 .container .checkbox input:checked {
-  background-color: #f76e33;
+  background-color: var(--color-or-500);
   background-image: url(../img/icon_check_wt_1.6px.png);
   background-repeat: no-repeat;
 }
@@ -105,8 +105,8 @@
 /* Common Button */
 .container .bk-bg-btn {
   border-radius: 4px;
-  background: #252525;
-  color: #fff;
+  background: var(--color-gr-1000);
+  color: var(--color-white);
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
@@ -114,9 +114,9 @@
 
 .container .gray-border-btn {
   border-radius: 4px;
-  border: 1px solid #c1c1c1;
-  background: #fff;
-  color: #252525;
+  border: 1px solid var(--color-gr-400);
+  background: var(--color-white);
+  color: var(--color-gr-1000);
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
@@ -126,12 +126,12 @@
 .notice-wrap {
   margin-top: 40px;
   border-radius: 4px;
-  background: #f9f9f9;
+  background: var(--color-gr-100);
   padding: 20px 32px;
 }
 
 .notice-wrap li {
-  color: #4e4e4e;
+  color: var(--color-gr-800);
   font-size: 13px;
   line-height: 19px;
   margin-bottom: 6px;
@@ -148,19 +148,19 @@
   width: 3.5px;
   height: 3.5px;
   border-radius: 100%;
-  background: #c1c1c1;
+  background: var(--color-gr-400);
   margin-right: 4px;
 }
 
 /* Common List */
 .common-list-wrap {
   border-radius: 8px;
-  border: 1px solid #d7d7d7;
+  border: 1px solid var(--color-gr-300);
   margin-bottom: 20px;
 }
 
 .common-list-wrap .list-header {
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid var(--color-gr-200);
   padding: 12px 20px;
   display: flex;
   align-items: center;
@@ -183,7 +183,7 @@
 .common-list-wrap .list-body li {
   display: grid;
   grid-template-columns: calc(100% - 20.945%) 20.945%;
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid var(--color-gr-200);
 }
 
 .common-list-wrap .text-wrap {
@@ -196,7 +196,7 @@
   height: 0;
   padding-top: 100%;
   border-radius: 4px;
-  background: #f3f3f3;
+  background: var(--color-gr-150);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -222,7 +222,7 @@
 }
 
 .common-list-wrap .work-info i {
-  color: #868686;
+  color: var(--color-gr-600);
   font-size: 13px;
   line-height: 18px;
 }
@@ -250,11 +250,11 @@
   height: 22px;
   padding: 0px 6px;
   border-radius: 4px;
-  background: #fff;
-  color: #4e4e4e;
+  background: var(--color-white);
+  color: var(--color-gr-800);
   font-size: 12px;
   font-weight: 500;
-  border: 1px solid #d7d7d7;
+  border: 1px solid var(--color-gr-300);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -262,8 +262,8 @@
 }
 
 .common-list-wrap .status i.orange-border {
-  border: 1px solid #fbb89b;
-  color: #f76e33;
+  border: 1px solid var(--color-or-300);
+  color: var(--color-or-500);
 }
 
 .common-list-wrap .payment-info {
@@ -273,7 +273,7 @@
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  border-left: 1px solid #eaeaea;
+  border-left: 1px solid var(--color-gr-200);
 }
 
 .common-list-wrap .payment-info dl {
@@ -302,7 +302,7 @@
 }
 
 .common-list-wrap .payment-info .total {
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid var(--color-gr-200);
   padding-top: 9px;
   margin-top: 4px;
 }
@@ -314,7 +314,7 @@
 
 .common-list-wrap .payment-noti {
   border-radius: 4px;
-  background: #f3f3f3;
+  background: var(--color-gr-150);
   font-size: 13px;
   line-height: 28px;
   height: 28px;
@@ -332,7 +332,7 @@
   align-items: center;
   justify-content: center;
   padding: 20px 11.979%;
-  border-left: 1px solid #eaeaea;
+  border-left: 1px solid var(--color-gr-200);
 }
 
 .common-list-wrap .buttons button {
@@ -350,7 +350,7 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  background: #252525;
+  background: var(--color-gr-1000);
   z-index: 99999;
   padding: 10px 0;
 }
@@ -368,8 +368,8 @@
 .bottom-fix-wrap .bottom-fix-container button {
   border: none;
   border-radius: 4px;
-  background: #f76e33;
-  color: #fff;
+  background: var(--color-or-500);
+  color: var(--color-white);
   font-size: 16px;
   font-weight: 700;
   width: 336px;
@@ -380,8 +380,8 @@
   height: 20px;
   width: 20px;
   border-radius: 100%;
-  background: #fff;
-  color: #f76e33;
+  background: var(--color-white);
+  color: var(--color-or-500);
   text-align: center;
   font-size: 14px;
   font-weight: 700;
@@ -398,7 +398,7 @@
 
 .bottom-fix-wrap .bottom-fix-container dt {
   margin-right: 16px;
-  color: #fff;
+  color: var(--color-white);
   font-size: 16px;
   font-weight: 700;
   display: flex;
@@ -414,7 +414,7 @@
 }
 
 .bottom-fix-wrap .bottom-fix-container dd {
-  color: #fff;
+  color: var(--color-white);
   font-size: 16px;
   font-weight: 400;
   display: flex;
@@ -443,8 +443,8 @@
 
 .bottom-fix-wrap .select-delivery {
   border-radius: 20px;
-  border: 1px solid #4e4e4e;
-  background: #fff;
+  border: 1px solid var(--color-gr-800);
+  background: var(--color-white);
   box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.16);
   width: 486px;
   position: absolute;
@@ -454,7 +454,7 @@
 
 .bottom-fix-wrap .select-delivery dl {
   padding: 16px 24px;
-  border-bottom: 1px solid #f3f3f3;
+  border-bottom: 1px solid var(--color-gr-150);
 }
 
 .bottom-fix-wrap .select-delivery dl:last-child {
@@ -462,7 +462,7 @@
 }
 
 .bottom-fix-wrap .select-delivery dt {
-  color: #252525;
+  color: var(--color-gr-1000);
   font-size: 15px;
   font-weight: 700;
   width: 85px;
@@ -473,15 +473,15 @@
   width: 20px;
   height: 20px;
   border-radius: 100%;
-  border: 2px solid #d7d7d7;
-  background: #fff;
+  border: 2px solid var(--color-gr-300);
+  background: var(--color-white);
   margin: 0;
   margin-right: 8px;
   position: relative;
 }
 
 .bottom-fix-wrap .select-delivery input:checked {
-  background: #f76e33;
+  background: var(--color-or-500);
   border-color: transparent;
 }
 
@@ -494,11 +494,11 @@
   width: 8px;
   height: 8px;
   border-radius: 100%;
-  background: #fff;
+  background: var(--color-white);
 }
 
 .bottom-fix-wrap .select-delivery dd {
-  color: #252525;
+  color: var(--color-gr-1000);
   font-size: 15px;
   font-weight: 400;
   width: calc(100% - 101px);
@@ -524,8 +524,8 @@
 
 .bottom-fix-wrap .select-delivery .gray-border {
   border-radius: 4px;
-  border: 1px solid #d7d7d7;
-  color: #868686;
+  border: 1px solid var(--color-gr-300);
+  color: var(--color-gr-600);
   text-align: center;
   font-size: 13px;
   font-weight: 500;
@@ -556,7 +556,7 @@
 }
 
 .reservation-detail .left-area .info-wrap {
-  border-bottom: 8px solid #f9f9f9;
+  border-bottom: 8px solid var(--color-gr-100);
   padding-bottom: 24px;
   margin-bottom: 24px;
 }
@@ -568,7 +568,7 @@
 
 .reservation-detail .input-text {
   border-radius: 4px;
-  border: 1px solid #e2e2e2;
+  border: 1px solid var(--color-gr-250);
   height: 46px;
   padding: 0px 16px;
   font-size: 15px;
@@ -617,7 +617,7 @@
   font-size: 15px;
   line-height: 21px;
   border-radius: 4px;
-  border: 1px solid #e2e2e2;
+  border: 1px solid var(--color-gr-250);
   padding: 0px 16px;
   height: 46px;
   display: flex;
@@ -626,9 +626,9 @@
 }
 
 .reservation-detail .date-info .select-time a.on {
-  background: #f76e33;
+  background: var(--color-or-500);
   border-color: transparent;
-  color: #fff;
+  color: var(--color-white);
   font-weight: 500;
 }
 
@@ -637,7 +637,7 @@
 }
 
 .reservation-detail .reservation-notice li {
-  color: #868686;
+  color: var(--color-gr-600);
   font-size: 13px;
   line-height: 19px;
   margin-bottom: 2px;
@@ -655,13 +655,13 @@
   width: 3.5px;
   height: 3.5px;
   border-radius: 100%;
-  background: #c1c1c1;
+  background: var(--color-gr-400);
 }
 
 .reservation-detail .left-area textarea {
   resize: none;
   border-radius: 4px;
-  border: 1px solid #e2e2e2;
+  border: 1px solid var(--color-gr-250);
   min-height: 108px;
   padding: 12px 16px;
   font-size: 15px;
@@ -669,14 +669,14 @@
 }
 
 .reservation-detail .left-area textarea::placeholder {
-  color: #868686;
+  color: var(--color-gr-600);
   font-size: 15px;
   line-height: 21px;
 }
 
 .reservation-detail .left-area .length-info {
   margin-top: 8px;
-  color: #868686;
+  color: var(--color-gr-600);
   text-align: right;
   font-size: 12px;
   line-height: 18px;
@@ -688,14 +688,14 @@
 
 .reservation-detail .drop-list-wrap {
   border-radius: 4px;
-  border: 1px solid #e2e2e2;
+  border: 1px solid var(--color-gr-250);
 }
 
 .reservation-detail .drop-list-wrap a {
   padding: 10px 16px;
   display: block;
   position: relative;
-  border-bottom: 1px solid #f3f3f3;
+  border-bottom: 1px solid var(--color-gr-150);
 }
 
 .reservation-detail .drop-list-wrap .drop-head {
@@ -730,7 +730,7 @@
   width: 64px;
   height: 64px;
   border-radius: 4px;
-  background: #f3f3f3;
+  background: var(--color-gr-150);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -763,7 +763,7 @@
 }
 
 .reservation-detail .drop-list-wrap .on-list {
-  border-bottom: 1px solid #f3f3f3;
+  border-bottom: 1px solid var(--color-gr-150);
   display: none;
 }
 
@@ -772,7 +772,7 @@
 }
 
 .reservation-detail .drop-body dl {
-  border-bottom: 1px solid #f3f3f3;
+  border-bottom: 1px solid var(--color-gr-150);
 }
 
 .reservation-detail .drop-body dl:last-child {
@@ -783,7 +783,7 @@
   width: 32%;
   padding: 24px;
   border-radius: 4px;
-  border: 1px solid #4e4e4e;
+  border: 1px solid var(--color-gr-800);
   position: sticky;
   top: 20px;
 }
@@ -829,7 +829,7 @@
 }
 
 .reservation-detail .total-price dd {
-  color: #f76e33;
+  color: var(--color-or-500);
   font-size: 20px;
   font-weight: 700;
   line-height: 28px;
@@ -838,9 +838,9 @@
 .reservation-detail .right-area button {
   height: 56px;
   border-radius: 4px;
-  background: #f76e33;
+  background: var(--color-or-500);
   border: none;
-  color: #fff;
+  color: var(--color-white);
   font-size: 16px;
   font-weight: 700;
   width: 100%;
@@ -871,13 +871,13 @@
   .container {
     padding: 0;
     margin-top: 0;
-    background: #f3f3f3;
+    background: var(--color-gr-150);
   }
 
   /* Common Page Top Area */
   .top-step-wrap {
     padding: 8px 20px 16px 20px;
-    background: #fff;
+    background: var(--color-white);
   }
 
   .top-step-wrap .step-list li {
@@ -901,8 +901,8 @@
     width: -o-calc(100% - 40px);
     margin: 0 auto 16px;
     border-radius: 8px;
-    border: 1px solid #eaeaea;
-    background: #fff;
+    border: 1px solid var(--color-gr-200);
+    background: var(--color-white);
     box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.04);
   }
 
@@ -1096,7 +1096,7 @@
   }
 
   .reservation-detail .left-area .info-wrap:last-child {
-    border-bottom: 8px solid #f9f9f9;
+    border-bottom: 8px solid var(--color-gr-100);
     padding-bottom: 24px;
   }
 
@@ -1121,8 +1121,8 @@
     left: 0;
     width: 100%;
     height: 76px;
-    border-top: 1px solid #eaeaea;
-    background: #fff;
+    border-top: 1px solid var(--color-gr-200);
+    background: var(--color-white);
   }
 
   .reservation-detail .right-area button.fix::after {
@@ -1131,7 +1131,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #f76e33;
+    background: var(--color-or-500);
     border-radius: 4px;
     height: 56px;
     width: calc(100% - 40px);
