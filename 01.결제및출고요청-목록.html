@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>01. 결제및 출고 요청 목록</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/payment.css" />
+    <script src="javascript/jquery-1.10.2.min.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+        <!-- Header -->
+        <header>
+            <h1><a href="#"><img src="img/logo.png" alt="로고" /></a></h1>
+            <nav>
+                <ul>
+                <li><a href="#">Live Auction</a></li>
+                <li><a href="#">Online Auction</a></li>
+                <li><a href="#">How To</a></li>
+                <li><a href="#">Services</a></li>
+                </ul>
+            </nav>
+            <div class="util">
+                <a href="#">LOGIN</a>
+                <a href="#">JOIN</a>
+                <a href="#">ENG</a>
+                <a href="#"><img src="img/icon_search.png" alt="검색" /></a>
+            </div>
+        </header>
+        <!-- //Header -->
+
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Mypage</a></li>
+                <li><a href="#">결제 및 출고 요청</a></li>
+            </ul>
+        </div>
+        <!-- //Breadcrumbs -->
+
+        <div class="container payment-container">
+            <div class="snb-wrap">
+                <h2>마이페이지</h2>
+                <ul>
+                <li><a href="#">응찰/낙찰내역</a></li>
+                <li>
+                    <a href="#">결제/출고관리</a>
+                    <ol>
+                        <li><a href="#" class="on">결제 및 출고 요청</a></li>
+                        <li><a href="#">결제 및 출고 요청 내역</a></li>
+                    </ol>
+                </li>
+                <li><a href="#">문의내역</a></li>
+                <li><a href="#">관심 작품/작가</a></li>
+                <li><a href="#">내 정보</a></li>
+                </ul>
+            </div>
+
+            <section>
+                <article>
+                    <div class="top-step-wrap">
+                        <h3 class="page-title">결제/출고 요청</h3>
+                        <ul class="step-list">
+                            <li class="on"><i>1</i><span>작품 선택</span></li>
+                            <li><i>2</i><span>출고 정보 입력</span></li>
+                            <li><i>3</i><span>완료</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="common-list-wrap">
+                        <div class="list-header">
+                            <div class="checkbox">
+                                <input type="checkbox" />
+                            </div>
+                            <b>2024년 12월 18일 메이저</b>
+                        </div>
+
+                        <div class="list-body">
+                            <ul>
+                                <!-- SET -->
+                                <li>
+                                    <div class="text-wrap">
+                                        <div class="checkbox"><input type="checkbox" /></div>
+
+                                        <div class="thumb">
+                                            <img src="https://images.k-auction.com/www/KMall/Work/0209/20900501001_L.jpg"/>
+                                        </div>
+
+                                        <div class="work-info">
+                                            <i class="lot-num">LOT 16</i>
+                                            <b>박서보</b>
+                                            <span>묘법 No. 1-06</span>
+                                            <div class="status">
+                                                <i class="gray-border">결제완료</i>
+                                                <i class="orange-border">배송비무료</i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="buttons">
+                                        <button class="bk-bg-btn">출고 요청</button>
+                                        <button class="gray-border-btn">담기</button>
+                                    </div>
+                                </li>
+                                <!-- //SET -->
+                                <!-- SET -->
+                                <li>
+                                    <div class="text-wrap">
+                                        <div class="checkbox"><input type="checkbox" /></div>
+
+                                        <div class="thumb">
+                                            <img src="https://images.k-auction.com/www/Konline/Work/0456/45600801001_L.jpg"/>
+                                        </div>
+
+                                        <div class="work-info">
+                                            <i class="lot-num">LOT 16</i>
+                                            <b>박서보</b>
+                                            <span>묘법 No. 1-06</span>
+                                        </div>
+
+                                        <div class="payment-info">
+                                            <dl>
+                                                <dt>낙찰 대금</dt>
+                                                <dd>12,000,000원</dd>
+                                            </dl>
+
+                                            <dl>
+                                                <dt>기타 비용</dt>
+                                                <dd>12,000,000원</dd>
+                                            </dl>
+
+                                            <dl>
+                                                <dt>낙찰 수수료<i>(VAT 포함)</i></dt>
+                                                <dd>12,000,000원</dd>
+                                            </dl>
+
+                                            <dl class="total">
+                                                <dt>결제 금액</i></dt>
+                                                <dd>14,400,000원</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+
+                                    <div class="buttons">
+                                        <button class="bk-bg-btn">출고 요청</button>
+                                        <button class="gray-border-btn">담기</button>
+                                    </div>
+                                </li>
+                                <!-- //SET -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="common-list-wrap">
+                        <div class="list-header">
+                            <div class="checkbox">
+                                <input type="checkbox" />
+                            </div>
+                            <b>2024년 12월 18일 메이저</b>
+                        </div>
+
+                        <div class="list-body">
+                            <ul>
+                                <!-- SET -->
+                                <li>
+                                    <div class="text-wrap">
+                                        <div class="checkbox"><input type="checkbox" /></div>
+
+                                        <div class="thumb">
+                                            <img src="https://images.k-auction.com/www/Work/0178/T/M0178201001_L.jpg"/>
+                                        </div>
+
+                                        <div class="work-info">
+                                            <i class="lot-num">LOT 16</i>
+                                            <b>까르띠에</b>
+                                            <span>까르띠에 데스티네 솔리테어링</span>
+                                        </div>
+
+                                        <div class="payment-info">
+                                            <p class="payment-noti">명품/악기류는 방문 수령만 가능합니다.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="buttons">
+                                        <button class="bk-bg-btn">출고 요청</button>
+                                        <button class="gray-border-btn">담기</button>
+                                    </div>
+                                </li>
+                                <!-- //SET -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <ul class="notice-wrap">
+                        <li>메이저 경매 낙찰 대금은 홈페이지 결제를 지원하지 않습니다. 별도 결제 후 출고 요청은 가능합니다.</li>
+                        <li>명품과 악기의 경우 방문 수령만 가능합니다.</li>
+                        <li>해외 결제와 해외 배송 요청 건은 지원하지 않습니다. (담당자 별도 문의)</li>
+                        <li>낙찰대금은 가상계좌 입금만 가능하며, 낙찰 수수료, 기타 비용 및 배송비는 가상계좌 입금 또는 신용카드 결제 모두 가능합니다.</li>
+                        <li>배송으로 희망 시 기본배송지가 자동 설정되며, 사용자가 변경할 수 있습니다.</li>
+                        <li>배송비는 작품별로 부과되며, 동일배송지 기준으로 1점 추가 당 1만원이 부과됩니다.</li>
+                        <li>설치 및 특수장비 동원 시 추가비용이 부과될 수 있습니다.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <div class="bottom-fix-wrap">
+                <div class="bottom-fix-container">
+                    <div>
+                        <dl>
+                            <dt>
+                                <i><img src="/img/icon_pickup.png"></i>
+                                <span>방문 수령</span>
+                            </dt>
+                            <dd>
+                                <span>케이옥션 전시장</span>
+                                <a href="#" class="arrow"><img src="/img/icon_arrow_b_wt_1.2px.png"></a>
+                            </dd>
+                        </dl>
+
+                        <div class="select-delivery">
+                            <dl>
+                                <dt>
+                                    <input type="radio" name="select-delivery" id="pickup" data-value="pickup" checked>
+                                    <label for="pickup">방문 수령</label>
+                                </dt>
+                                <dd>
+                                    <span>케이옥션 전시장</span>
+                                </dd>
+                            </dl>
+
+                            <dl>
+                                <dt>
+                                    <input type="radio" name="select-delivery" id="delivery" data-value="delivery">
+                                    <label for="delivery">배송</label>
+                                </dt>
+                                <dd>
+                                    <span>서울특별시 강남구 언주로 172길 23, 아트타워 5층 주소가 길어질 경우는 이렇게 보여집니다 최대 3줄까지 노출</span>
+                                    <a href="#" class="gray-border">변경</a>
+                                    <b>예상 배송비 <i>50,000원</i></b>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <button>결제/출고 요청<i class="length">5</i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+
+  <script>
+    document.querySelector('.bottom-fix-container a.arrow').addEventListener('click', function(){
+        this.classList.toggle('on');
+        $('.select-delivery').slideToggle();
+
+        event.preventDefault(); //상단방지
+    })
+
+    document.querySelectorAll('.select-delivery dt').forEach(function(option){
+        option.querySelector('input').addEventListener('click', function(){
+            const parent = this.parentElement;
+            const bottomFixContainer = document.querySelector('.bottom-fix-container');
+
+            bottomFixContainer.querySelector('dt span').textContent = parent.querySelector('label').textContent;
+            bottomFixContainer.querySelector('dd span').textContent = parent.nextElementSibling.querySelector('span').textContent;
+
+            bottomFixContainer.querySelector('dt img').src = `/img/icon_${this.getAttribute('data-value')}.png`
+        })
+    })
+
+    
+    
+  </script>
+</html>
