@@ -1,7 +1,7 @@
-## 01.결제및출고요청-목록 PC
+### 01.결제및출고요청-목록 PC
 ![image](https://github.com/user-attachments/assets/a527ce8b-d336-4924-a6c4-df2e8d5b8250)
 
-## 01.결제및출고요청-목록 MO
+### 01.결제및출고요청-목록 MO
 <img src="https://github.com/user-attachments/assets/ea639a78-b762-47b0-b765-861cc5945b90" width="375"/>
 
 <br/>
